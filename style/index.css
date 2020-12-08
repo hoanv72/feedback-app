@@ -1,0 +1,494 @@
+
+.feedback-iframe{
+  border:none;
+  outline: none;
+  width: 420px;
+  height: 400px;
+  float:right;  
+}
+
+.feedback-area {
+  position: absolute;
+  top: 30%;
+  right: 0%;
+}
+.feedback-btn {
+  top: 40%;
+  position: absolute;
+  right: -40px;
+  transform: rotate(-90deg);
+  width: 115px;
+  height: 38px;
+  background: #02b875;
+  opacity: .9;
+  border-radius: 3px 3px 0 0;
+  outline: none;
+  border: none;
+  font-family: Source Sans Pro,  sans-serif;
+}
+.feedback-btn:hover {
+  box-shadow: 0 6px 40px 0 rgba(0, 0, 0, 0.3) !important;
+  height: 42px;
+}
+.feedback-btn h2{
+  color: white;
+  font-size: 14px;
+  font-weight:lighter;
+  margin-right:17px;
+  display: inline;
+  line-height: 18px;
+  text-align: center;
+}
+.feedback-btn h2 svg{
+  transform: rotate(90deg);
+  margin-left: 5px;
+  margin-right: 3px;
+  width:18px;
+  color:white;
+}
+.feedback-comp {
+  z-index: 101;
+  width: 320px;
+  height: 190px;
+  background: white;
+  box-shadow: 0 6px 60px 0 rgba(0, 0, 0, 0.3) !important;
+  padding-top: 40px;
+  margin-right: 28px;
+  position: relative;
+  border-radius: 5px;
+  text-align: center;
+  word-wrap: break-word;
+  display: none;
+}
+.feedback-greeting {
+  color: #333;
+  cursor: default;
+  font-size: 17px;
+  margin-bottom: 20px;
+  margin-top: -5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.icon-list {
+  display: inline;
+  margin-bottom: 50px;
+  width: 100%;
+  margin-left: 10px;
+}
+.feedback-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 25px;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.angry-icon {
+  transition-delay: 1s;
+  transition-duration: 0.5s;
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.branding{
+    box-sizing: border-box;
+    font-size: 13px;
+    color:#676767;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    word-wrap: none;
+    display: flex;
+    flex-direction: row;
+}
+.logo-branding{
+    width: 15px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.link-out-brand{
+    color:#676767;
+}
+.close-icon-feedback-btn-1 {
+  position: absolute;
+  right: 5%;
+  top: 0;
+  margin-top: -15px;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background: #02b875;
+  color: white;
+  font-weight: 800;
+}
+.feedback-form {
+  z-index: 98;
+  width: 320px;
+  height: 290px;
+  background: #fff;
+  margin-right: 28px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 6px 60px 0 rgba(0, 0, 0, 0.3) !important;
+  position: relative;
+  display: none;
+}
+.close-icon-feedback-btn-2 {
+  position: absolute;
+  right: 5%;
+  top: 0;
+  margin-top: -15px;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background: #02b875;
+  color: white;
+  font-weight: 800;
+  z-index: 100;
+}
+.icon-voted {
+  background: #fff;
+  height: 55px;
+  margin-left: 30px;
+  padding-top: 20px;
+}
+
+.feedback-icon-voted{
+  width: 25px;
+  height: 25px;
+  margin-right: 25px;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  
+}
+
+.emoji-voted-1 {
+  filter: grayscale(100%);
+}
+.emoji-voted-2 {
+  filter: grayscale(100%);
+}
+.emoji-voted-3 {
+  filter: grayscale(100%);
+}
+.emoji-voted-4 {
+  filter: grayscale(100%);
+}
+.emoji-voted-5 {
+  filter: grayscale(100%);
+}
+.main-feedback {
+  height: 150px;
+  background: #eaeaeb;
+  position: relative;
+}
+.input-feedback {
+  height: 100px;
+  width: 280px;
+  outline: none;
+  border:none;
+  background: transparent;
+  padding : 20px;
+  color: #777a82;
+  display: block;
+  resize: none;
+  overflow: auto;
+}
+.input-feedback::placeholder{
+  text-align: center;
+  padding-top: 30px;
+}
+.select-element {
+  outline: none;
+  border: none;
+position: absolute;
+bottom: 10px;
+left: 10px;
+}
+.select-element:hover:after {
+  content: "Chọn một phần trên Website";
+  background: black;
+  color: #fff;
+  opacity: 0.8;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 1.5s ease;
+}
+.submit-main-feedback {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+.submit-btn {
+  border: none;
+  outline: none;
+  padding: 7px 9px;
+  background: #ccc;
+  border-radius: 5px;
+  color: #333;
+}
+.email-form {
+  z-index: 100;
+  width: 320px;
+  height: 220px;
+  background: #fff;
+  margin-right: 28px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 6px 60px 0 rgba(0, 0, 0, 0.3) !important;
+  display: none;
+}
+.email-form-title {
+  height: 60px;
+  background: white;
+  color: #333;
+  font-size: 18px;
+  padding:30px !important;
+  word-wrap: break-word;
+  text-align: center;
+}
+.get-email-form{
+    background: #eaeaeb;
+}
+.input-email{
+    background:#eaeaeb;
+    border:none;
+    outline:none;
+    color:#737780;
+    height: 45px;
+    width:300px;
+    margin-left: 15px;
+    text-align: center;
+}
+.input-email::placeholder{
+    text-align: center;
+    padding-left: 10px;
+}
+.submit-email-form{
+    position: absolute;
+    bottom: 12px;
+    right: 10px;
+}
+.skip-btn{
+    outline:none;
+    border:none;
+    background: transparent;
+    text-decoration: underline;
+    color:#adadad;
+}
+.skip-btn:hover{
+    color:grey;
+}
+.submit-email-btn{
+    padding:6px 15px;
+    outline:none;
+    border:none;
+    background: #ccc;
+    color:black;
+    border-radius: 5px;
+
+}
+
+.close-icon-feedback-btn-3 {
+  position: absolute;
+  right: 5%;
+  top: 0;
+  margin-top: -15px;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background: #02b875;
+  color: white;
+  font-weight: 800;
+}
+
+.angry-icon {
+  animation: Slide_Up 0.1s ease;
+}
+
+.angry-icon:hover:after{
+    content: 'Ghét';
+    font-size: 12px;
+    text-align: center;
+    color: #9b9999;
+    position: absolute;
+    bottom:-30px;
+    left: -35px;
+    width:100px;
+    text-align: center;
+}
+.sad-icon {
+  animation: Slide_Up 0.2s ease;
+}
+.sad-icon:hover:after{
+    content: 'Không thích';
+    font-size: 12px;
+    text-align: center;
+    color: #9b9999;
+    position: absolute;
+    bottom:-30px;
+    left: -30px;
+    width:100px;
+    text-align: center;
+}
+.neutral-icon {
+  animation: Slide_Up 0.4s ease;
+}
+.neutral-icon:hover:after{
+    content: 'Bình thường';
+    font-size: 12px;
+    text-align: center;
+    color: #9b9999;
+    position: absolute;
+    bottom:-30px;
+    left: -30px;
+    width:100px;
+    text-align: center;
+}
+.happy-icon {
+  animation: Slide_Up 0.6s ease;
+}
+.happy-icon:hover:after{
+    content: 'Thích';
+    font-size: 12px;
+    text-align: center;
+    color: #9b9999;
+    position: absolute;
+    bottom:-30px;
+    left: -30px;
+    width:100px;
+    text-align: center;
+}
+.love-icon {
+  animation: Slide_Up 0.8s ease;
+}
+.love-icon:hover:after{
+    content: 'Rất thích';
+    font-size: 12px;
+    text-align: center;
+    color: #9b9999;
+    position: absolute;
+    bottom:-30px;
+    left: -30px;
+    width:100px;
+    text-align: center;
+}
+@keyframes Slide_Up {
+  0% {
+    transform: translateY(80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.last-greeting-content{
+  color:#333 !important;
+  word-wrap: break-word;
+  font-family: Arial, sans-serif, Tahoma !important;
+  font-size: 11px;
+  margin-right: 60px;
+  padding: 15px 20px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.3) !important;
+  border-radius: 5px;
+  position: relative;
+  display: none;
+}
+
+.last-greeting-content::after{
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%; /* To the right of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #ccc;
+}
+.last-greeting-content:hover{
+  box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.3) !important;
+}
+
+.change{
+  stroke: red;
+  fill: white;
+  position: absolute;
+  right: 0;
+}
+
+.clicked-element::after{
+  position: absolute;
+content: 'Thay đổi';
+color: white;
+  background: #f4465a;
+  width: auto;
+  padding: 5px 20px;
+  height: auto;
+  bottom:0;
+  right: 0;
+  margin-bottom: -30px;
+  margin-right: -4px; 
+  z-index: 99;
+  border-radius: 0 0 5px 5px;
+}
+.thanks-title{
+  position: relative;
+  font-size: 14px;
+  color: #696969;
+  text-align: center;
+  width: auto;
+  padding: 0px 8px;
+  background: #fff;
+  margin-right: 50px;
+
+  border-radius: 3px;
+  box-shadow: 0px 6px 20px 0 rgba(36,29,29,0.2) , -3px -6px 20px 0 rgba(66, 60, 60, 0.2) ;
+  display: none;
+}
+.thanks-title::after{
+  content: ' ';
+  position: absolute;
+  left:100%;
+  top:50%;
+  margin-top: -5px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: transparent transparent transparent white;
+}
+.thanks-title p{
+  padding: 10px;
+}
+
+
+.emoji-voted::after{
+  content: " ";
+  position: absolute;
+  bottom: -125%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent transparent #ccc transparent;
+}
+
+
+
+.remove-greyScale{
+  filter: grayscale(0%);
+}
+.remove-greyScale img{
+  width: 40px;
+  height: 40px;
+}
